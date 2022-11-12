@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/fondoazul_03"
+    android:padding="15dp"
+    tools:context=".MnSalasActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewEmpresaLogo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="left"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/logoemp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="170dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/text_style"
+        android:drawablePadding="30dp"
+        android:gravity="center"
+        android:text="Menú Salas"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewTecLogo"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toEndOf="@+id/imageViewEmpresaLogo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewTecLogo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/logotec" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAltasS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/btn_style"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewEmpresaLogo"
+        tools:srcCompat="@mipmap/icon_altas" />
+
+    <ImageButton
+        android:id="@+id/imageButtonConsultasS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/btn_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonAltasS"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewTecLogo"
+        tools:srcCompat="@mipmap/icon_consultas" />
+
+    <ImageButton
+        android:id="@+id/imageButtonModificacionesS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_style"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonEliminarS"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:srcCompat="@mipmap/icon_editar" />
+
+    <ImageButton
+        android:id="@+id/imageButtonEliminarS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:srcCompat="@mipmap/icon_eliminar" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/text_style"
+        android:gravity="center"
+        android:text="Altas"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonAltasS" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/text_style"
+        android:gravity="center"
+        android:text="Consultas"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonConsultasS" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/text_style"
+        android:gravity="center"
+        android:text="Modificar"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonModificacionesS" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/text_style"
+        android:gravity="center"
+        android:text="Eliminar"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonEliminarS" />
+
+    <ImageButton
+        android:id="@+id/imageButtonRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@mipmap/icon_regresar"
+        android:background="@drawable/btn_style"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|top">
+
+
+    <EditText
+        android:id="@+id/editTextNombreM"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/caja_text_style"
+        android:hint="@string/nombreM"
+        android:inputType="textPersonName"
+        android:textSize="25dp" />
+    <EditText
+        android:id="@+id/editTextCorreo"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:background="@drawable/caja_text_style"
+        android:gravity="center"
+        android:hint="@string/nombreM"
+        android:inputType="textPersonName"
+        />
+    <EditText
+        android:id="@+id/editTextArea1"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:background="@drawable/caja_text_style"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        />
+    <EditText
+        android:id="@+id/editTextarea2"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:background="@drawable/caja_text_style"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        />
+    <EditText
+        android:id="@+id/editTextInstitucion"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:background="@drawable/caja_text_style"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        />
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/text_style"
+        android:text="Moderador que remplaza"
+        />
+
+    <EditText
+        android:id="@+id/editTextNombreMRempazo"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:background="@drawable/caja_text_style"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        />
+
+
+
+
+
+
+</LinearLayout>
