@@ -19,8 +19,15 @@ public class InicioModeradoresActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio_moderadores);
 
-
+        btniniciar = findViewById(R.id.buttonIngresarM);
         btnregresar = findViewById(R.id.buttonIngresarM);
+        correo = findViewById(R.id.editTextCorreo);
+        pwsM = findViewById(R.id.editTextPassword);
+
+
+
+
+
 
     }
 }
