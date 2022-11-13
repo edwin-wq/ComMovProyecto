@@ -4,11 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:background="@drawable/fondoazul_02"
     android:padding="15dp"
-    tools:context=".AltasModeradoresActivity">
-
+    tools:context=".EliminaModeradoresActivity">
 
     <ImageView
         android:id="@+id/imageViewEmpresaLogo"
@@ -41,7 +39,7 @@
         android:background="@drawable/text_style"
         android:drawablePadding="30dp"
         android:gravity="center"
-        android:text="Altas Moderadores"
+        android:text="Eliminar Moderadores"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/imageViewTecLogo"
@@ -53,7 +51,7 @@
         android:id="@+id/editTextNombreM"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/caja_text_style"
         android:gravity="center"
         android:hint="@string/nombreM"
@@ -62,19 +60,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
+    <ImageButton
+        android:id="@+id/imageButtonBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/btn_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombreM"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/caja_text_style"
         android:ems="10"
         android:gravity="center"
         android:hint="@string/correo"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNombreM" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonBuscar" />
 
     <Spinner
         android:id="@+id/spinnerAreaPrin"
@@ -136,57 +146,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinnerAreaSec" />
 
-    <EditText
-        android:id="@+id/editTextContraseñaM"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/caja_text_style"
-        android:gravity="center"
-        android:hint="@string/passwordM"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextInstitucion" />
-
-    <EditText
-        android:id="@+id/editTextContraseñaM2"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/caja_text_style"
-        android:gravity="center"
-        android:hint="@string/ConfPswM"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextContraseñaM" />
-
-
     <ImageButton
-        android:id="@+id/imageButtonGuardar"
-        android:layout_width="29dp"
-        android:layout_height="35dp"
+        android:id="@+id/imageButtonEliminarM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/btn_style"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonCancelar"
+        app:layout_constraintHorizontal_bias="0.009"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextContraseñaM2"
-        app:srcCompat="@android:drawable/ic_menu_save" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextInstitucion"
+        app:layout_constraintVertical_bias="0.245"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
 
     <ImageButton
         android:id="@+id/imageButtonCancelar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
         android:background="@drawable/btn_style"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
-        app:layout_constraintStart_toEndOf="@+id/imageButtonGuardar"
-        app:layout_constraintTop_toBottomOf="@+id/editTextContraseñaM2"
-        app:srcCompat="@android:drawable/btn_dialog" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextInstitucion"
+        app:layout_constraintVertical_bias="0.219"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

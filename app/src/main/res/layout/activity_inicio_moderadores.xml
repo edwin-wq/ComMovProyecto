@@ -7,7 +7,7 @@
 
     android:background="@drawable/fondoazul_02"
     android:padding="15dp"
-    tools:context=".MainActivity">
+    tools:context=".InicioModeradoresActivity">
 
     <ImageView
         android:id="@+id/imageViewEmpresaLogo"
@@ -35,12 +35,12 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="164dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="64dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/text_style"
         android:drawablePadding="30dp"
         android:gravity="center"
-        android:text="Inicio de seción"
+        android:text="Inicio de Moderadores"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/imageViewTecLogo"
@@ -49,13 +49,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/buttonIngresar"
+        android:id="@+id/buttonIngresarM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
         android:background="@drawable/btn_style"
         android:textColor="@color/white"
-        android:text="@string/ingresarA"
+        android:text="@string/ingresarM"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
@@ -70,10 +70,11 @@
         android:drawablePadding="10dp"
         android:ems="10"
         android:inputType="textPassword"
-        android:hint="@string/passwordA"
+        android:hint="@string/passwordM"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextUser" />
+
 
     <EditText
         android:id="@+id/editTextUser"
@@ -85,36 +86,13 @@
         android:drawablePadding="10dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="@string/usuarioA"
+        android:hint="@string/correo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <Button
-        android:id="@+id/buttonIniciarModeradores"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:background="@drawable/btn_style"
-        android:text="@string/iniciarmoderadores"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonIngresar" />
-
-    <Button
-        android:id="@+id/buttonVerSalas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:background="@drawable/btn_style"
-        android:text="@string/salasV"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.537"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonIniciarModeradores" />
-
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/imageButtonRegresar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
@@ -123,7 +101,7 @@
         app:layout_constraintHorizontal_bias="0.941"
         app:layout_constraintStart_toStartOf="parent"
         android:background="@drawable/btn_style"
-        app:srcCompat="@mipmap/icon_exit_02" />
+        app:srcCompat="@mipmap/icon_regresar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

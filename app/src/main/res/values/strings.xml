@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">ComMovProyecto</string>
-    <string name="usuario">Usuario</string>
-    <string name="password">Contraseña</string>
-    <string name="ingresar">Ingresar</string>
-    <string name="moderadoresV">Ver Moderadores</string>
+    <string name="usuarioA">Usuario</string>
+    <string name="passwordA">Contraseña</string>
+    <string name="passwordM">Contraseña</string>
+    <string name="ingresarA">Ingresar</string>
+    <string name="ingresarM">Ingresar</string>
+    <string name="iniciarmoderadores">Iniciar como Moderadores</string>
     <string name="salasV">Ver Salas</string>
     <string name="title_activity_menu">MenuActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -12,12 +14,11 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
     <string name="nombreM">Nombre compreto</string>
     <string name="correo">Correo</string>
     <string name="institucion">Institucion</string>
     <string name="buscarM">Nombre del moderador a buscar</string>
+    <string name="ConfPswM">Confirmar contraseña</string>
+    <string name="horaInicio">Hora de inicio</string>
+    <string name="comentario">Escribe aqui</string>
 </resources>
