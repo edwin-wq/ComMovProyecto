@@ -223,6 +223,36 @@
                 app:layout_constraintTop_toBottomOf="@+id/editTextNombreM2" />
 
             <EditText
+                android:id="@+id/editTextContraseñaM"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/caja_text_style"
+                android:gravity="center"
+                android:hint="@string/passwordM"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextInstitucion" />
+
+            <EditText
+                android:id="@+id/editTextContraseñaM2"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/caja_text_style"
+                android:gravity="center"
+                android:hint="@string/ConfPswM"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextContraseñaM" />
+
+
+
+            <EditText
                 android:id="@+id/editTextInstitucionMRemplazo"
                 android:layout_width="300dp"
                 android:layout_height="40dp"
