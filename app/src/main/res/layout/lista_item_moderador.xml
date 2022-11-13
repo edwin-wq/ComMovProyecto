@@ -18,12 +18,11 @@
         android:id="@+id/editTextCorreo"
         android:layout_width="350dp"
         android:layout_height="40dp"
-        android:textColor="@color/white"
         android:background="@drawable/caja_text_style"
         android:gravity="center"
-        android:hint="@string/nombreM"
-        android:inputType="textPersonName"
-        />
+        android:hint="@string/correo"
+        android:inputType="textPersonName"/>
+
     <EditText
         android:id="@+id/editTextArea1"
         android:layout_width="350dp"

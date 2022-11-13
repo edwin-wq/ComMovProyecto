@@ -21,4 +21,5 @@
     <string name="ConfPswM">Confirmar contraseña</string>
     <string name="horaInicio">Hora de inicio</string>
     <string name="comentario">Escribe aqui</string>
+    <string name="correoRemp">Correo del moderador que remplaza</string>
 </resources>

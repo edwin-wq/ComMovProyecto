@@ -72,19 +72,18 @@
         app:srcCompat="@android:drawable/ic_menu_search" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/editTextCorreo"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/caja_text_style"
-        android:ems="10"
         android:gravity="center"
         android:hint="@string/correo"
-        android:inputType="textEmailAddress"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButtonBuscar" />
+
 
     <Spinner
         android:id="@+id/spinnerAreaPrin"
@@ -117,7 +116,7 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextCorreo" />
 
     <TextView
         android:id="@+id/textView9"
