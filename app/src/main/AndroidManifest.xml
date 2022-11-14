@@ -13,6 +13,13 @@
         android:theme="@style/Theme.ComMovProyecto"
         tools:targetApi="31">
         <activity
+            android:name=".LoginModeradoresActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".ModeradoresBitacoraActivity"
             android:exported="false">
             <meta-data

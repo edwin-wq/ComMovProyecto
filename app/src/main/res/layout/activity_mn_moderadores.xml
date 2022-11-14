@@ -5,49 +5,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:background="@drawable/fondoazul_03"
+    android:background="@drawable/fondoazul_02"
     android:padding="15dp"
     tools:context=".MnModeradoresActivity">
 
-
     <ImageView
-        android:id="@+id/imageViewEmpresaLogo"
+        android:id="@+id/imageViewlogemp"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_gravity="left"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="30dp"
         android:background="@color/white"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/logoemp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="170dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="44dp"
-        android:background="@drawable/text_style"
-        android:drawablePadding="30dp"
-        android:gravity="center"
-        android:text="Menú Moderadores"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/imageViewTecLogo"
-        app:layout_constraintHorizontal_bias="0.476"
-        app:layout_constraintStart_toEndOf="@+id/imageViewEmpresaLogo"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:srcCompat="@drawable/logoemp" />
 
     <ImageView
-        android:id="@+id/imageViewTecLogo"
+        android:id="@+id/imageViewlogtec"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_gravity="right"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/logotec" />
+        app:srcCompat="@drawable/logotec" />
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="164dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:text="Menú Admin Moderdadores"
+        android:background="@drawable/text_style"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewlogtec"
+        app:layout_constraintStart_toEndOf="@+id/imageViewlogemp"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButtonAltasM"
@@ -58,8 +52,8 @@
         android:background="@drawable/btn_style"
         android:contentDescription="@string/altasMn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewEmpresaLogo"
-        tools:srcCompat="@mipmap/icon_altas" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewlogemp"
+        app:srcCompat="@mipmap/icon_altas" />
 
     <ImageButton
         android:id="@+id/imageButtonConsultarM"
@@ -68,11 +62,13 @@
         android:layout_marginTop="100dp"
         android:background="@drawable/btn_style"
         android:contentDescription="@string/buscarMn"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toEndOf="@+id/imageButtonAltasM"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewTecLogo"
-        tools:srcCompat="@mipmap/icon_consultas" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewlogtec"
+        app:srcCompat="@mipmap/icon_consultas" />
 
     <ImageButton
         android:id="@+id/imageButtonRemplazarM"
@@ -85,7 +81,7 @@
         app:layout_constraintHorizontal_bias="0.423"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:srcCompat="@mipmap/icon_editar" />
+        app:srcCompat="@mipmap/icon_editar" />
 
     <ImageButton
         android:id="@+id/imageButtonEliminarM"
@@ -97,7 +93,7 @@
         android:contentDescription="@string/eliminarM"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
-        tools:srcCompat="@mipmap/icon_eliminar" />
+        app:srcCompat="@mipmap/icon_eliminar" />
 
     <TextView
         android:id="@+id/textView4"
@@ -158,15 +154,16 @@
         android:id="@+id/imageButtonRegresar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.888"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@mipmap/icon_regresar"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/btn_style"
         android:contentDescription="@string/Regresar"
-        />
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

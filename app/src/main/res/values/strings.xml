@@ -41,4 +41,6 @@
     <string name="consultasS">MenuConsultaS</string>
     <string name="nombreMR">NombreMRemp</string>
     <string name="passwordMR">ContraseñaMR</string>
+    <string name="Guardar1">habilitacasillas</string>
+    <string name="Guardar2">habilitacasillas2</string>
 </resources>
