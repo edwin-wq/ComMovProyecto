@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    EditText usuario, constrasena;
+    EditText usuario, contrasena;
     Button btningresa, btnloginMod;
     ImageButton imgBtnsalir;
 
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         usuario = (EditText) findViewById(R.id.editTextUser);
-        constrasena = (EditText) findViewById(R.id.editTextPassword);
+        contrasena = (EditText) findViewById(R.id.editTextPassword);
         btningresa = (Button) findViewById(R.id.buttonIngresar);
         btnloginMod =(Button) findViewById(R.id.buttonIniciarModeradores);
         imgBtnsalir = (ImageButton)findViewById(R.id.imageButtonSalir);
@@ -37,16 +37,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.buttonIngresar:
-                if(usuario.getText().toString().equals("Admin")&& constrasena.getText().toString().equals("0519gomez")){
+                if(usuario.getText().toString().equals("Admin")&& contrasena.getText().toString().equals("0519")){
                     startActivity(new Intent(MainActivity.this, MenuActivity.class));
+                    finish();
                 }
                 else {
                     Toast.makeText(MainActivity.this,"Usuario o contraseña incorrecta", Toast.LENGTH_LONG).show();
                 }
                 break;
             case R.id.buttonIniciarModeradores:
-                //startActivity(new Intent(MainActivity.this, LoginModeradoresActivity.class));
-                startActivity(new Intent(MainActivity.this, MnModeradoresActivity.class));
+                startActivity(new Intent(MainActivity.this, AltasModeradoresActivity.class));
+                finish();
+                //startActivity(new Intent(MainActivity.this, MnModeradoresActivity.class));
 
                 break;
             case R.id.imageButtonSalir:

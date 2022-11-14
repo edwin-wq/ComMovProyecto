@@ -3,7 +3,7 @@ package com.example.commovproyecto;
 public class UsuarioModerClass {
 
     int id;
-    String nombre, correo, area1, area2, institucion, passw, nombreMR, correoMR, passwMR, institucionMR;
+    String nombre, correo, area1, area2, institucion, passw, pssw2, nombreMR, correoMR, passwMR, institucionMR;
 
 
     public boolean isNull(){
@@ -60,13 +60,33 @@ public class UsuarioModerClass {
         this.institucionMR = institucionMR;
     }
 
-    public int getId() {
-        return id;
+    public UsuarioModerClass(String nombre, String correo, String area1, String area2, String institucion, String passw, String pssw2, String nombreMR, String correoMR, String passwMR, String institucionMR) {
+        this.nombre = nombre;
+        this.correo = correo;
+        this.area1 = area1;
+        this.area2 = area2;
+        this.institucion = institucion;
+        this.passw = passw;
+        this.pssw2 = pssw2;
+        this.nombreMR = nombreMR;
+        this.correoMR = correoMR;
+        this.passwMR = passwMR;
+        this.institucionMR = institucionMR;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public UsuarioModerClass(String nombre, String correo, String area1, String area2, String institucion, String passw, String pssw2) {
+        this.nombre = nombre;
+        this.correo = correo;
+        this.area1 = area1;
+        this.area2 = area2;
+        this.institucion = institucion;
+        this.passw = passw;
+        this.pssw2 = pssw2;
     }
+
+    public int getId() { return id; }
+
+    public void setId(int id) { this.id = id; }
 
     public String getNombre() {
         return nombre;
@@ -112,9 +132,11 @@ public class UsuarioModerClass {
         return passw;
     }
 
-    public void setPassw(String passw) {
-        this.passw = passw;
-    }
+    public void setPassw(String passw) { this.passw = passw; }
+
+    public String getPssw2() { return pssw2; }
+
+    public void setPssw2(String pssw2) { this.pssw2 = pssw2; }
 
     public String getNombreMR() {
         return nombreMR;

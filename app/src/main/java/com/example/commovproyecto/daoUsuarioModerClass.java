@@ -15,17 +15,17 @@ public class daoUsuarioModerClass {
     ArrayList<UsuarioModerClass> Lista;
     SQLiteDatabase sql;
     String bd = "BDModeradores";
-    String tabla = "create table usuarioMod(id integer primary key autoincrement," +
+    String tabla = "create table if not exists usuarioMod(id integer primary key autoincrement," +
                                                                 "nombre text," +
                                                                 "correo text," +
                                                                 "area1 text," +
                                                                 "area2 text," +
                                                                 "institucion text," +
-                                                                "password text," +
-                                                                "nombreMR text," +
-                                                                "correoMR text," +
-                                                                "passwordMR text," +
-                                                                "institucionMR text)";
+                                                                "password text)";
+                                                                //"nombreMR text," +
+                                                                //"correoMR text," +
+                                                                //"passwordMR text," +
+                                                                //"institucionMR text)";
 
     public daoUsuarioModerClass(Context c){
         this.c = c;
@@ -43,10 +43,10 @@ public class daoUsuarioModerClass {
             cv.put("area2",u.getArea2());
             cv.put("institucion",u.getInstitucion());
             cv.put("password",u.getPassw());
-            cv.put("nombreMR",u.getNombreMR());
-            cv.put("correoMR",u.getCorreoMR());
-            cv.put("passwordMR",u.getPasswMR());
-            cv.put("institucionMR",u.getInstitucionMR());
+            //cv.put("nombreMR",u.getNombreMR());
+            //cv.put("correoMR",u.getCorreoMR());
+            //cv.put("passwordMR",u.getPasswMR());
+            //cv.put("institucionMR",u.getInstitucionMR());
             return (sql.insert("usuarioMod",null,cv)>0);
         }else {
             return false;
@@ -56,25 +56,25 @@ public class daoUsuarioModerClass {
     public ArrayList<UsuarioModerClass> usuariosModerClass(){
         ArrayList<UsuarioModerClass> lista=new ArrayList<UsuarioModerClass>();
         lista.clear();
-    Cursor cr=sql.rawQuery("select * from usuarioMod", null);
-    if (cr!=null&&cr.moveToFirst()){
-        do{
-            UsuarioModerClass u=new UsuarioModerClass();
-            u.setId(cr.getInt(0));
-            u.setNombre(cr.getString(1));
-            u.setCorreo(cr.getString(2));
-            u.setArea1(cr.getString(3));
-            u.setArea2(cr.getString(3));
-            u.setInstitucion(cr.getString(4));
-            u.setPassw(cr.getString(5));
-            u.setNombreMR(cr.getString(6));
-            u.setCorreoMR(cr.getString(7));
-            u.setPasswMR(cr.getString(8));
-            u.setInstitucionMR(cr.getString(9));
-            lista.add(u);
-        }while (cr.moveToNext());
-    }
-    return lista;
+        Cursor cr=sql.rawQuery("select * from usuarioMod", null);
+            if (cr!=null&&cr.moveToFirst()){
+                do{
+                    UsuarioModerClass u=new UsuarioModerClass();
+                    u.setId(cr.getInt(0));
+                    u.setNombre(cr.getString(1));
+                    u.setCorreo(cr.getString(2));
+                    u.setArea1(cr.getString(3));
+                    u.setArea2(cr.getString(3));
+                    u.setInstitucion(cr.getString(4));
+                    u.setPassw(cr.getString(5));
+                    //u.setNombreMR(cr.getString(6));
+                    //u.setCorreoMR(cr.getString(7));
+                    //u.setPasswMR(cr.getString(8));
+                    //u.setInstitucionMR(cr.getString(9));
+                    lista.add(u);
+                }while (cr.moveToNext());
+            }
+        return lista;
     }
 
     public int buscar(String u){
