@@ -83,7 +83,7 @@
         android:layout_height="52dp"
         android:layout_marginTop="76dp"
         android:background="@drawable/caja_text_style"
-        android:drawableLeft="@drawable/Usu_icon"
+        android:drawableLeft="@drawable/icon_usu"
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="@string/usuarioA"
