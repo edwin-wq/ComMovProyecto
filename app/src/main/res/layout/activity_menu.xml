@@ -58,6 +58,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
         android:background="@drawable/btn_style"
+        android:contentDescription="@string/moderadoresMn"
         tools:srcCompat="@drawable/moderadores" />
 
     <ImageButton
@@ -70,10 +71,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         android:background="@drawable/btn_style"
+        android:contentDescription="@string/salasMn"
         tools:srcCompat="@drawable/salas" />
 
     <ImageButton
-        android:id="@+id/imageButtonSalir"
+        android:id="@+id/imageButtonRegresar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
@@ -82,6 +84,7 @@
         app:layout_constraintHorizontal_bias="0.944"
         app:layout_constraintStart_toStartOf="parent"
         android:background="@drawable/btn_style"
+        android:contentDescription="@string/Regresar"
         tools:srcCompat="@mipmap/icon_exit" />
 
     <TextView

@@ -22,4 +22,23 @@
     <string name="horaInicio">Hora de inicio</string>
     <string name="comentario">Escribe aqui</string>
     <string name="correoRemp">Correo del moderador que remplaza</string>
+    <string name="Guardar">Guardar</string>
+    <string name="areaPri">Seleccione una</string>
+    <string name="areaSec">Seleccione otra</string>
+    <string name="Cancelar">Cancelar</string>
+    <string name="Regresar">Regresar</string>
+    <string name="eliminar">Elimina</string>
+    <string name="salir">Salir</string>
+    <string name="salasMn">MenuSalaras</string>
+    <string name="moderadoresMn">MenuModeradores</string>
+    <string name="remplazarM">Remplazar Moderador</string>
+    <string name="eliminarM">menu elimianar</string>
+    <string name="buscarMn">MenuBuscaM</string>
+    <string name="altasMn">MenuAltasM</string>
+    <string name="eliminarS">MenuEliminarS</string>
+    <string name="altasS">MenuAltasS</string>
+    <string name="modificaS">MenuModificaS</string>
+    <string name="consultasS">MenuConsultaS</string>
+    <string name="nombreMR">NombreMRemp</string>
+    <string name="passwordMR">ContraseñaMR</string>
 </resources>

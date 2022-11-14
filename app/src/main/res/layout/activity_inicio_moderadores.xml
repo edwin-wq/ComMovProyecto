@@ -76,7 +76,8 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextCorreo" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextCorreo"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/buttonIngresarM"
@@ -100,6 +101,7 @@
         app:layout_constraintHorizontal_bias="0.941"
         app:layout_constraintStart_toStartOf="parent"
         android:background="@drawable/btn_style"
+        android:contentDescription="@string/Regresar"
         app:srcCompat="@mipmap/icon_regresar" />
 
 

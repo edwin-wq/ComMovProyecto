@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -14,6 +15,7 @@
         android:hint="@string/nombreM"
         android:inputType="textPersonName"
         android:textSize="25dp" />
+
     <EditText
         android:id="@+id/editTextCorreo"
         android:layout_width="350dp"
@@ -21,13 +23,15 @@
         android:background="@drawable/caja_text_style"
         android:gravity="center"
         android:hint="@string/correo"
-        android:inputType="textPersonName"/>
+        android:inputType="textPersonName"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTextArea1"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:textColor="@color/white"
+        android:hint="@string/areaPri"
         android:background="@drawable/caja_text_style"
         android:gravity="center"
         android:inputType="textPersonName"
@@ -37,35 +41,39 @@
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:textColor="@color/white"
+        android:hint="@string/areaSec"
         android:background="@drawable/caja_text_style"
         android:gravity="center"
         android:inputType="textPersonName"
         />
+
     <EditText
         android:id="@+id/editTextInstitucion"
         android:layout_width="350dp"
         android:layout_height="40dp"
-        android:textColor="@color/white"
         android:background="@drawable/caja_text_style"
         android:gravity="center"
         android:inputType="textPersonName"
-        />
+        android:textColor="@color/white"
+        tools:ignore="TouchTargetSizeCheck" />
+
     <EditText
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:background="@drawable/text_style"
         android:text="Moderador que remplaza"
-        />
+        tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/editTextNombreMRempazo"
         android:layout_width="350dp"
         android:layout_height="40dp"
-        android:textColor="@color/white"
         android:background="@drawable/caja_text_style"
         android:gravity="center"
         android:inputType="textPersonName"
-        />
+        android:hint="no"
+        android:textColor="@color/white"
+        tools:ignore="TouchTargetSizeCheck" />
 
 
 
