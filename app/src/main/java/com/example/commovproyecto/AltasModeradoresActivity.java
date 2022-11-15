@@ -100,12 +100,12 @@ public class AltasModeradoresActivity extends AppCompatActivity implements View.
                 }else{
                     Toast.makeText(this,"ERROR: Campos vacios", Toast.LENGTH_LONG).show();
                 }
+
+
+
+
+
             //}
-
-
-
-
-
                 //UsuarioModerClass u= new UsuarioModerClass();
                 //u.setNombre(nombre.getText().toString());
                 //u.setCorreo(correo.getText().toString());
@@ -123,6 +123,7 @@ public class AltasModeradoresActivity extends AppCompatActivity implements View.
                         //    } else {
                           //  Toast.makeText(this,"Moderador ya registrado", Toast.LENGTH_LONG).show();
                // }
+
                 break;
 
             case R.id.imageButtonCancelar:

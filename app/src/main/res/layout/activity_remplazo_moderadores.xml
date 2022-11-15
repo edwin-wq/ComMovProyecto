@@ -36,7 +36,7 @@
         android:layout_width="164dp"
         android:layout_height="50dp"
         android:layout_marginTop="15dp"
-        android:text="Inicio Moderdadores"
+        android:text="Remplazo Moderdadores"
         android:background="@drawable/text_style"
         android:textColor="@color/white"
         android:textSize="20dp"
@@ -133,17 +133,20 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/editTextCorreo" />
 
-            <Spinner
-                android:id="@+id/spinnerAreaPrincipal"
+            <EditText
+                android:id="@+id/editAreaPricial"
                 android:layout_width="300dp"
                 android:layout_height="48dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/caja_text_style"
-                android:contentDescription="@string/areaPri"
+                android:gravity="center"
+                android:hint="@string/areaPri"
+                android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView8"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNombreM2"
                 tools:ignore="TouchTargetSizeCheck" />
+
 
             <TextView
                 android:id="@+id/textView9"
@@ -158,17 +161,21 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/spinnerAreaPrin" />
 
-            <Spinner
-                android:id="@+id/spinnerAreaSecundaria"
+
+            <EditText
+                android:id="@+id/editAreaSecundaria"
                 android:layout_width="300dp"
                 android:layout_height="48dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/caja_text_style"
-                android:contentDescription="@string/areaSec"
+                android:gravity="center"
+                android:hint="@string/areaSec"
+                android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView9"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNombreM2"
                 tools:ignore="TouchTargetSizeCheck" />
+
 
             <EditText
                 android:id="@+id/editTextInstitucion"

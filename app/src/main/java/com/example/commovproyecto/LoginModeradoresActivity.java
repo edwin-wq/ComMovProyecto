@@ -38,6 +38,7 @@ public class LoginModeradoresActivity extends AppCompatActivity implements View.
 
                 if(correoU.getText().toString().equals("Admin")&& contrasena.getText().toString().equals("0519")){
                     startActivity(new Intent(LoginModeradoresActivity.this, ModeradoresBitacoraActivity.class));
+                    finish();
                 }
                 else {
                     Toast.makeText(LoginModeradoresActivity.this,"Usuario o contraseña incorrecta", Toast.LENGTH_LONG).show();
@@ -45,6 +46,7 @@ public class LoginModeradoresActivity extends AppCompatActivity implements View.
                 break;
             case R.id.imageButtonRegresar:
                 startActivity(new Intent(LoginModeradoresActivity.this, MainActivity.class));
+                finish();
                 break;
 
         }

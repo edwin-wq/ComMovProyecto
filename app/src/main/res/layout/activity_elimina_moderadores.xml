@@ -46,7 +46,7 @@
     <EditText
         android:id="@+id/editTextNombreM"
         android:layout_width="300dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginTop="60dp"
         android:background="@drawable/caja_text_style"
         android:gravity="center"
@@ -72,7 +72,7 @@
     <EditText
         android:id="@+id/editTextCorreo"
         android:layout_width="300dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/caja_text_style"
         android:gravity="center"
@@ -83,30 +83,35 @@
         app:layout_constraintTop_toBottomOf="@+id/imageButtonBuscar"
         tools:ignore="TouchTargetSizeCheck" />
 
-
-    <Spinner
-        android:id="@+id/spinnerAreaPrin"
+    <EditText
+        android:id="@+id/editAreaPricial"
         android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="5dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/caja_text_style"
-        android:contentDescription="@string/areaPri"
+        android:gravity="center"
+        android:hint="@string/areaPri"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         tools:ignore="TouchTargetSizeCheck" />
 
-    <Spinner
-        android:id="@+id/spinnerAreaSec"
+
+    <EditText
+        android:id="@+id/editAreaSecundaria"
         android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="5dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/caja_text_style"
-        android:contentDescription="@string/areaSec"
+        android:gravity="center"
+        android:hint="@string/areaSec"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
         tools:ignore="TouchTargetSizeCheck" />
+
 
     <TextView
         android:id="@+id/textView8"
@@ -132,13 +137,13 @@
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerAreaPrin" />
+        app:layout_constraintTop_toBottomOf="@+id/editAreaPricial" />
 
 
     <EditText
         android:id="@+id/editTextInstitucion"
         android:layout_width="300dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/caja_text_style"
         android:gravity="center"
@@ -146,7 +151,7 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerAreaSec"
+        app:layout_constraintTop_toBottomOf="@+id/editAreaSecundaria"
         tools:ignore="TouchTargetSizeCheck" />
 
     <ImageButton
