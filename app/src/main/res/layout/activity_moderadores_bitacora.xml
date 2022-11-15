@@ -36,7 +36,7 @@
         android:layout_marginTop="15dp"
         android:background="@drawable/text_style"
         android:gravity="center"
-        android:text="Inicio Moderdadores"
+        android:text="Bitacora de Moderdadores"
         android:textColor="@color/white"
         android:textSize="20dp"
         app:layout_constraintEnd_toStartOf="@+id/imageViewlogtec"
@@ -45,11 +45,17 @@
 
     <ScrollView
         android:id="@+id/scrollView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="483dp"
+        android:layout_height="563dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="15dp">
+        app:layout_constraintVertical_bias="0.887"
+        tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -169,45 +175,50 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/caja_text_style"
                 android:gravity="center"
-                android:hint="@string/nombreM"
+                android:hint="@string/horaFin"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView4"
                 tools:ignore="TouchTargetSizeCheck" />
 
-            <ImageButton
-                android:id="@+id/imageButtonG3"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/btn_style"
-                android:contentDescription="@string/Guardar"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextHoradeFin"
-                app:srcCompat="@android:drawable/ic_menu_save"
-                tools:ignore="TouchTargetSizeCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButtonG3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="200dp"
+                    android:background="@drawable/btn_style"
+                    android:contentDescription="@string/Guardar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextHoradeFin"
+                    app:srcCompat="@android:drawable/ic_menu_save"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonRegresar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_style"
+                    android:contentDescription="@string/Regresar"
+                    app:srcCompat="@android:drawable/ic_menu_revert"
+                    tools:ignore="TouchTargetSizeCheck"
+                    tools:layout_editor_absoluteX="416dp"
+                    tools:layout_editor_absoluteY="982dp" />
 
 
-
-            <ImageButton
-                android:id="@+id/imageButtonRegresar"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="30dp"
-                android:layout_gravity="right"
-                android:layout_marginEnd="50dp"
-                android:background="@drawable/btn_style"
-                android:contentDescription="@string/Regresar"
-                app:srcCompat="@android:drawable/ic_menu_revert"
-                tools:ignore="TouchTargetSizeCheck"
-                tools:layout_editor_absoluteX="416dp"
-                tools:layout_editor_absoluteY="982dp" />
+            </LinearLayout>
         </LinearLayout>
 
     </ScrollView>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

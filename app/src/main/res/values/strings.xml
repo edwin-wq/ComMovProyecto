@@ -20,6 +20,7 @@
     <string name="buscarM">Nombre del moderador a buscar</string>
     <string name="ConfPswM">Confirmar contraseña</string>
     <string name="horaInicio">Hora de inicio</string>
+    <string name="horaFin">Hora de Fin</string>
     <string name="comentario">Escribe aqui</string>
     <string name="correoRemp">Correo del moderador que remplaza</string>
     <string name="Guardar">Guardar</string>

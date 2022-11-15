@@ -21,6 +21,13 @@ public class MnModeradoresActivity extends AppCompatActivity implements View.OnC
         consulta=(ImageButton) findViewById(R.id.imageButtonConsultarM);
         remplaza=(ImageButton) findViewById(R.id.imageButtonRemplazarM);
         regresa=(ImageButton) findViewById(R.id.imageButtonRegresar);
+
+        altas.setOnClickListener(this);
+        elimina.setOnClickListener(this);
+        consulta.setOnClickListener(this);
+        remplaza.setOnClickListener(this);
+        regresa.setOnClickListener(this);
+
     }
 
     @Override
@@ -40,6 +47,7 @@ public class MnModeradoresActivity extends AppCompatActivity implements View.OnC
                 startActivity(new Intent(MnModeradoresActivity.this, ConsultarModeradoresActivity.class));
                 finish();
                 break;
+
             case(R.id.imageButtonRemplazarM):
                 startActivity(new Intent(MnModeradoresActivity.this, RemplazoModeradoresActivity.class));
                 finish();

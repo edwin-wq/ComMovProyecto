@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
             case R.id.buttonIniciarModeradores:
-                startActivity(new Intent(MainActivity.this, AltasModeradoresActivity.class));
+                startActivity(new Intent(MainActivity.this, LoginModeradoresActivity.class));
                 finish();
                 //startActivity(new Intent(MainActivity.this, MnModeradoresActivity.class));
 
