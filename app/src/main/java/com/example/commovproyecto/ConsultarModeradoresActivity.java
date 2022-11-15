@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.example.commovproyecto.adaptadores.ListaModeradoresAdapter;
+import com.example.commovproyecto.db.DbModeradores;
 import com.example.commovproyecto.entidades.ModeradoresClass;
 
 import java.util.ArrayList;
@@ -18,7 +20,7 @@ public class ConsultarModeradoresActivity extends AppCompatActivity implements V
     ImageButton regresa;
     RecyclerView listaModeradores;
     ArrayList<ModeradoresClass> listaArrayModeradores;
-    //ListaContactosAdapter adapter;
+    ListaModeradoresAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,9 +31,12 @@ public class ConsultarModeradoresActivity extends AppCompatActivity implements V
         regresa=(ImageButton) findViewById(R.id.imageButtonRegresar);
 
         listaModeradores.setLayoutManager(new LinearLayoutManager(this));
-
         regresa.setOnClickListener(this);
 
+        DbModeradores dbModeradores= new DbModeradores(ConsultarModeradoresActivity.this);
+        listaArrayModeradores = new ArrayList<>();
+        adapter = new ListaModeradoresAdapter(dbModeradores.mostrarModeradores());
+        listaModeradores.setAdapter(adapter);
 
     }
 

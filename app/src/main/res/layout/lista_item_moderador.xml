@@ -7,8 +7,8 @@
     android:gravity="center|top">
 
 
-    <EditText
-        android:id="@+id/editTextNombreM"
+    <TextView
+        android:id="@+id/viewNombreM"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:background="@drawable/caja_text_style"
@@ -16,8 +16,8 @@
         android:inputType="textPersonName"
         android:textSize="25dp" />
 
-    <EditText
-        android:id="@+id/editTextCorreo"
+    <TextView
+        android:id="@+id/viewCorreo"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:background="@drawable/caja_text_style"
@@ -26,8 +26,8 @@
         android:inputType="textPersonName"
         tools:ignore="TouchTargetSizeCheck" />
 
-    <EditText
-        android:id="@+id/editTextArea1"
+    <TextView
+        android:id="@+id/viewArea1"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:textColor="@color/white"
@@ -36,8 +36,8 @@
         android:gravity="center"
         android:inputType="textPersonName"
         />
-    <EditText
-        android:id="@+id/editTextarea2"
+    <TextView
+        android:id="@+id/viewarea2"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:textColor="@color/white"
@@ -47,8 +47,8 @@
         android:inputType="textPersonName"
         />
 
-    <EditText
-        android:id="@+id/editTextInstitucion"
+    <TextView
+        android:id="@+id/viewInstitucion"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:background="@drawable/caja_text_style"
@@ -57,15 +57,15 @@
         android:textColor="@color/white"
         tools:ignore="TouchTargetSizeCheck" />
 
-    <EditText
+    <TextView
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:background="@drawable/text_style"
         android:text="Moderador que remplaza"
         tools:ignore="TouchTargetSizeCheck" />
 
-    <EditText
-        android:id="@+id/editTextNombreMRempazo"
+    <TextView
+        android:id="@+id/viewNombreMR"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:background="@drawable/caja_text_style"
@@ -74,10 +74,6 @@
         android:hint="no"
         android:textColor="@color/white"
         tools:ignore="TouchTargetSizeCheck" />
-
-
-
-
 
 
 </LinearLayout>

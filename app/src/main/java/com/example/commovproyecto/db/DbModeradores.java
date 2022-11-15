@@ -2,8 +2,13 @@ package com.example.commovproyecto.db;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import androidx.annotation.Nullable;
+
+import com.example.commovproyecto.entidades.ModeradoresClass;
+
+import java.util.ArrayList;
 
 public class DbModeradores extends DbHelper {
 
@@ -38,6 +43,37 @@ public class DbModeradores extends DbHelper {
 
         return id;
     }
+
+
+    public ArrayList<ModeradoresClass> mostrarModeradores() {
+
+        DbHelper dbHelper = new DbHelper(context);
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+        ArrayList<ModeradoresClass> listaModerador = new ArrayList<>();
+        ModeradoresClass moderador;
+        Cursor cursorModerador;
+
+        cursorModerador = db.rawQuery("SELECT nombre, correo,area1,area2,institucion FROM " + TABLE_MODERADORES + " ORDER BY nombre ASC", null);
+
+        if (cursorModerador.moveToFirst()) {
+            do {
+                moderador = new ModeradoresClass();
+                moderador.setNombre(cursorModerador.getString(0));
+                moderador.setCorreo(cursorModerador.getString(1));
+                moderador.setArea1(cursorModerador.getString(2));
+                moderador.setArea2(cursorModerador.getString(3));
+                moderador.setInstitucion(cursorModerador.getString(4));
+
+                listaModerador.add(moderador);
+            } while (cursorModerador.moveToNext());
+        }
+
+        cursorModerador.close();
+
+        return listaModerador;
+    }
+
 
 
 }
