@@ -1,4 +1,4 @@
-package com.example.commovproyecto;
+package com.example.commovproyecto.entidades;
 
 public class UsuarioModerClass {
 

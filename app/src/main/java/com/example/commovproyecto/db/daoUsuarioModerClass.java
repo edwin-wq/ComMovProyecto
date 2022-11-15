@@ -1,11 +1,12 @@
-package com.example.commovproyecto;
+package com.example.commovproyecto.db;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import java.sql.ClientInfoStatus;
+import com.example.commovproyecto.entidades.UsuarioModerClass;
+
 import java.util.ArrayList;
 
 public class daoUsuarioModerClass {

@@ -1,20 +1,17 @@
 package com.example.commovproyecto;
 
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.ContentValues;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
+
+import com.example.commovproyecto.db.DbModeradores;
 
 public class AltasModeradoresActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -64,8 +61,50 @@ public class AltasModeradoresActivity extends AppCompatActivity implements View.
         switch (v.getId()){
             case R.id.imageButtonGuardar:
 
-            //Metodo para dar de altas Mod
-               // public void altasMod(View view){
+                if(!nombre.getText().toString().equals("") &&
+                        !correo.getText().toString().equals("")&&
+                        !institucion.getText().toString().equals("")&&
+                        !pssw1.getText().toString().equals("")&&
+                        !pssw2.getText().toString().equals("")&&
+                        !autoCompleteTxtA1.getText().toString().equals("")&&
+                        !autoCompleteTxtA2.getText().toString().equals("")) {
+
+                     DbModeradores dbModeradores = new DbModeradores(AltasModeradoresActivity.this);
+                    long id = dbModeradores.insertarModeradores(nombre.getText().toString(), correo.getText().toString(), autoCompleteTxtA1.getText().toString(),autoCompleteTxtA2.getText().toString(),institucion.getText().toString(),pssw1.getText().toString());
+
+                    if (id > 0) {
+                        Toast.makeText(AltasModeradoresActivity.this, "MODERADOR GUARDADO", Toast.LENGTH_LONG).show();
+                        nombre.setText("");
+                        correo.setText("");
+                        institucion.setText("");
+                        pssw1.setText("");
+                        pssw2.setText("");
+                        autoCompleteTxtA1.setText("");
+                        autoCompleteTxtA2.setText("");
+
+                    } else {
+                        Toast.makeText(AltasModeradoresActivity.this, "ERROR AL GUARDAR mODERADOR", Toast.LENGTH_LONG).show();
+                    }
+                } else {
+                    Toast.makeText(AltasModeradoresActivity.this, "DEBE LLENAR LOS CAMPOS OBLIGATORIOS", Toast.LENGTH_LONG).show();
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /*Metodo para dar de altas Mod
+                public void altasMod(View view){
                 AdminSQLiteHelper admin =new AdminSQLiteHelper(this,"Moderadores", null, 1);
                 SQLiteDatabase BaseDeDatos = admin.getWritableDatabase();
 
@@ -96,6 +135,7 @@ public class AltasModeradoresActivity extends AppCompatActivity implements View.
                     institucion.setText("");
                     pssw1.setText("");
                     pssw2.setText("");
+
                     Toast.makeText(this,"Moderador registrado exitosamente", Toast.LENGTH_LONG).show();
                 }else{
                     Toast.makeText(this,"ERROR: Campos vacios", Toast.LENGTH_LONG).show();
@@ -122,7 +162,7 @@ public class AltasModeradoresActivity extends AppCompatActivity implements View.
                        //     Toast.makeText(this,"Moderador registrado exitosamente", Toast.LENGTH_LONG).show();
                         //    } else {
                           //  Toast.makeText(this,"Moderador ya registrado", Toast.LENGTH_LONG).show();
-               // }
+               // }*/
 
                 break;
 
@@ -132,5 +172,4 @@ public class AltasModeradoresActivity extends AppCompatActivity implements View.
                 break;
         }
     }
-
 }
