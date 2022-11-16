@@ -36,7 +36,7 @@ public class LoginModeradoresActivity extends AppCompatActivity implements View.
         switch (v.getId()){
             case R.id.buttonIngresarM:
 
-                if(correoU.getText().toString().equals("Admin")&& contrasena.getText().toString().equals("0519")){
+                if(correoU.getText().toString().equals("ed")&& contrasena.getText().toString().equals("05")){
                     startActivity(new Intent(LoginModeradoresActivity.this, ModeradoresBitacoraActivity.class));
                     finish();
                 }

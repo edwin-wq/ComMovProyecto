@@ -30,6 +30,7 @@ public class ListaModeradoresAdapter extends RecyclerView.Adapter<ListaModerador
 
     @Override
     public void onBindViewHolder(@NonNull ModeradorViewHolder holder, int position) {
+        //holder.viewId.setText(listaModeradores.get(position).getId());
         holder.viewNombre.setText(listaModeradores.get(position).getNombre());
         holder.viewCorreo.setText(listaModeradores.get(position).getCorreo());
         holder.viewArea1.setText(listaModeradores.get(position).getArea1());
@@ -44,10 +45,10 @@ public class ListaModeradoresAdapter extends RecyclerView.Adapter<ListaModerador
     }
 
     public class ModeradorViewHolder extends RecyclerView.ViewHolder {
-        TextView viewNombre, viewCorreo, viewArea1, viewarea2, viewInstitucion, viewNombreMR;
+        TextView viewId,viewNombre, viewCorreo, viewArea1, viewarea2, viewInstitucion, viewNombreMR;
         public ModeradorViewHolder(@NonNull View itemView) {
             super(itemView);
-
+            viewId= itemView.findViewById(R.id.viewId);
             viewNombre= itemView.findViewById(R.id.viewNombreM);
             viewCorreo= itemView.findViewById(R.id.viewCorreo);
             viewArea1= itemView.findViewById(R.id.viewArea1);

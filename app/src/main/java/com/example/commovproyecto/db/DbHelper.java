@@ -11,6 +11,7 @@ public class DbHelper extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NOMBRE = "moderadores.db";
     public static final String TABLE_MODERADORES = "t_moderUsu";
+    public static final String TABLE_SALAS = "t_salas";
 
 
     public DbHelper(@Nullable Context context) {
@@ -24,10 +25,17 @@ public class DbHelper extends SQLiteOpenHelper {
                 "id INTEGER PRIMARY KEY AUTOINCREMENT," +
                 "nombre TEXT NOT NULL," +
                 "correo TEXT NOT NULL," +
-                "area1 TEXT NOT NULL," +
-                "area2 TEXT NOT NULL," +
                 "institucion TEXT NOT NULL," +
-                "password TEXT)");
+                "password TEXT," +
+                "area1 TEXT NOT NULL," +
+                "area2 TEXT NOT NULL)");
+
+
+        sqLiteDatabase.execSQL("CREATE TABLE " + TABLE_SALAS + "(" +
+                "id INTEGER PRIMARY KEY AUTOINCREMENT," +
+                "nombreS TEXT NOT NULL," +
+                "Aarea TEXT NOT NULL," +
+                "moderador TEXT NOT NULL)");
 
     }
 
@@ -35,6 +43,9 @@ public class DbHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
         sqLiteDatabase.execSQL("DROP TABLE " + TABLE_MODERADORES);
+        onCreate(sqLiteDatabase);
+
+        sqLiteDatabase.execSQL("DROP TABLE " + TABLE_SALAS);
         onCreate(sqLiteDatabase);
 
     }

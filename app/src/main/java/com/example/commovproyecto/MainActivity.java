@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.buttonIngresar:
-                if(usuario.getText().toString().equals("Admin")&& contrasena.getText().toString().equals("0519")){
+                if(usuario.getText().toString().equals("ed")&& contrasena.getText().toString().equals("05")){
                     startActivity(new Intent(MainActivity.this, MenuActivity.class));
                     finish();
                 }

@@ -15,6 +15,16 @@
         android:hint="@string/nombreM"
         android:inputType="textPersonName"
         android:textSize="25dp" />
+    <TextView
+        android:id="@+id/viewId"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="@drawable/caja_text_style"
+        android:hint="@string/Id"
+        android:inputType="textPersonName"
+         />
+
 
     <TextView
         android:id="@+id/viewCorreo"
@@ -53,7 +63,7 @@
         android:layout_height="40dp"
         android:background="@drawable/caja_text_style"
         android:gravity="center"
-        android:inputType="textPersonName"
+        android:hint="@string/institucion"
         android:textColor="@color/white"
         tools:ignore="TouchTargetSizeCheck" />
 

@@ -70,7 +70,7 @@ public class AltasModeradoresActivity extends AppCompatActivity implements View.
                         !autoCompleteTxtA2.getText().toString().equals("")) {
 
                      DbModeradores dbModeradores = new DbModeradores(AltasModeradoresActivity.this);
-                    long id = dbModeradores.insertarModeradores(nombre.getText().toString(), correo.getText().toString(), autoCompleteTxtA1.getText().toString(),autoCompleteTxtA2.getText().toString(),institucion.getText().toString(),pssw1.getText().toString());
+                    long id = dbModeradores.insertarModeradores(nombre.getText().toString(), correo.getText().toString(), institucion.getText().toString(),pssw1.getText().toString(),autoCompleteTxtA1.getText().toString(),autoCompleteTxtA2.getText().toString());
 
                     if (id > 0) {
                         Toast.makeText(AltasModeradoresActivity.this, "MODERADOR GUARDADO", Toast.LENGTH_LONG).show();
