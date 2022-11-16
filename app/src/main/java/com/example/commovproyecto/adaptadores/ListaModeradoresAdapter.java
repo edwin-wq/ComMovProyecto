@@ -45,10 +45,11 @@ public class ListaModeradoresAdapter extends RecyclerView.Adapter<ListaModerador
     }
 
     public class ModeradorViewHolder extends RecyclerView.ViewHolder {
-        TextView viewId,viewNombre, viewCorreo, viewArea1, viewarea2, viewInstitucion, viewNombreMR;
+        //viewId
+        TextView viewNombre, viewCorreo, viewArea1, viewarea2, viewInstitucion, viewNombreMR;
         public ModeradorViewHolder(@NonNull View itemView) {
             super(itemView);
-            viewId= itemView.findViewById(R.id.viewId);
+            //viewId= itemView.findViewById(R.id.viewId);
             viewNombre= itemView.findViewById(R.id.viewNombreM);
             viewCorreo= itemView.findViewById(R.id.viewCorreo);
             viewArea1= itemView.findViewById(R.id.viewArea1);

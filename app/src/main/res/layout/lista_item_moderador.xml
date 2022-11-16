@@ -11,19 +11,11 @@
         android:id="@+id/viewNombreM"
         android:layout_width="350dp"
         android:layout_height="40dp"
-        android:background="@drawable/caja_text_style"
+        android:background="@drawable/text_style"
         android:hint="@string/nombreM"
+        android:textColor="@color/white"
         android:inputType="textPersonName"
-        android:textSize="25dp" />
-    <TextView
-        android:id="@+id/viewId"
-        android:layout_width="350dp"
-        android:layout_height="40dp"
-        android:gravity="center"
-        android:background="@drawable/caja_text_style"
-        android:hint="@string/Id"
-        android:inputType="textPersonName"
-         />
+        android:textSize="30dp" />
 
 
     <TextView
@@ -34,28 +26,31 @@
         android:gravity="center"
         android:hint="@string/correo"
         android:inputType="textPersonName"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="TouchTargetSizeCheck"
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
 
     <TextView
         android:id="@+id/viewArea1"
         android:layout_width="350dp"
-        android:layout_height="40dp"
-        android:textColor="@color/white"
-        android:hint="@string/areaPri"
+        android:layout_height="48dp"
         android:background="@drawable/caja_text_style"
         android:gravity="center"
+        android:hint="@string/areaPri"
         android:inputType="textPersonName"
-        />
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
+
     <TextView
         android:id="@+id/viewarea2"
         android:layout_width="350dp"
-        android:layout_height="40dp"
-        android:textColor="@color/white"
-        android:hint="@string/areaSec"
+        android:layout_height="48dp"
         android:background="@drawable/caja_text_style"
         android:gravity="center"
+        android:hint="@string/areaSec"
         android:inputType="textPersonName"
-        />
+        android:textColor="@color/white"
+        android:textSize="20dp"/>
 
     <TextView
         android:id="@+id/viewInstitucion"
@@ -65,14 +60,17 @@
         android:gravity="center"
         android:hint="@string/institucion"
         android:textColor="@color/white"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="TouchTargetSizeCheck"
+        android:textSize="20dp"/>
 
     <TextView
         android:layout_width="350dp"
         android:layout_height="40dp"
-        android:background="@drawable/text_style"
+        android:background="@drawable/caja_text_style"
         android:text="Moderador que remplaza"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="TouchTargetSizeCheck"
+        android:textColor="@color/white"
+        android:textSize="30dp"/>
 
     <TextView
         android:id="@+id/viewNombreMR"
@@ -83,7 +81,8 @@
         android:inputType="textPersonName"
         android:hint="no"
         android:textColor="@color/white"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="TouchTargetSizeCheck"
+        android:textSize="20dp"/>
 
 
 </LinearLayout>
