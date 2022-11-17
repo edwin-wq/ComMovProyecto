@@ -75,6 +75,40 @@ public class DbModeradores extends DbHelper {
         return listaModerador;
     }
 
+
+    public ArrayList<ModeradoresClass> mostrarModeradoresEliminar() {
+
+        DbHelper dbHelper = new DbHelper(context);
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+        ArrayList<ModeradoresClass> listaModeradorElimina = new ArrayList<>();
+        ModeradoresClass moderadorElim= null;
+        Cursor cursorModeradorElim= null;
+
+        cursorModeradorElim = db.rawQuery("SELECT * FROM " + TABLE_MODERADORES + " ORDER BY nombre ASC", null);
+
+        if (cursorModeradorElim.moveToFirst()) {
+            do {
+                moderadorElim = new ModeradoresClass();
+                moderadorElim.setId(cursorModeradorElim.getInt(0));
+                moderadorElim.setNombre(cursorModeradorElim.getString(1));
+                moderadorElim.setCorreo(cursorModeradorElim.getString(2));
+                moderadorElim.setInstitucion(cursorModeradorElim.getString(3));
+                moderadorElim.setPassw(cursorModeradorElim.getString(4));
+                moderadorElim.setArea1(cursorModeradorElim.getString(5));
+                moderadorElim.setArea2(cursorModeradorElim.getString(6));
+
+
+                listaModeradorElimina.add(moderadorElim);
+            } while (cursorModeradorElim.moveToNext());
+        }
+        cursorModeradorElim.close();
+        return listaModeradorElimina;
+    }
+
+
+
+
     public ModeradoresClass verModeradores(int id) {
 
         DbHelper dbHelper = new DbHelper(context);

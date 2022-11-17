@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/fondoazul_02"
+    android:padding="15dp"
+    tools:context=".Ver_Edit_ElimActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewlogemp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoemp" />
+
+    <ImageView
+        android:id="@+id/imageViewlogtec"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logotec" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="164dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/text_style"
+        android:gravity="center"
+        android:text="Datos del Moderdador"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewlogtec"
+        app:layout_constraintStart_toEndOf="@+id/imageViewlogemp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="376dp"
+        android:layout_height="565dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.567">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/viewNombre"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="clip_horizontal"
+                android:background="@drawable/text_style"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:text="Nombre Moderador" />
+
+
+            <EditText
+                android:id="@+id/editTextNombreM"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/caja_text_style"
+                android:gravity="center"
+                android:hint="@string/nombreM"
+                android:labelFor="@+id/viewNombre"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+            <TextView
+                android:id="@+id/viewCorreo"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="clip_horizontal"
+                android:background="@drawable/text_style"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:text="Correo" />
+            <EditText
+                android:id="@+id/editTextCorreo"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/caja_text_style"
+                android:gravity="center"
+                android:hint="@string/correo"
+                android:labelFor="@+id/viewCorreo"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextNombreM"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/viewArea1"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="clip_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/text_style"
+                android:text="Area primaria"
+                android:textColor="@color/white"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:background="@drawable/caja_text_style"
+                android:hint="@string/Selecion1"
+                android:labelFor="@+id/viewArea1">
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_complete_txtA1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/caja_text_style"
+                    android:inputType="none"></AutoCompleteTextView>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/viewarea2"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="clip_horizontal"
+                android:background="@drawable/text_style"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:text="Area secundaria" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:background="@drawable/caja_text_style"
+                android:labelFor="@+id/viewArea2"
+                android:hint="@string/Selecion2">
+
+                <AutoCompleteTextView
+                    android:id="@+id/auto_complete_txtA2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/caja_text_style"
+                    android:inputType="none"></AutoCompleteTextView>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/viewInstitucion"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="clip_horizontal"
+                android:background="@drawable/text_style"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:text="Institucion" />
+
+            <EditText
+                android:id="@+id/editTextInstitucion"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/caja_text_style"
+                android:gravity="center"
+                android:hint="@string/institucion"
+                android:labelFor="@+id/viewInstitucion"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerAreaSec"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/viewPssword"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="clip_horizontal"
+                android:background="@drawable/text_style"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:text="Contraseña" />
+            <EditText
+                android:id="@+id/editTextContraseñaM"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/caja_text_style"
+                android:gravity="center"
+                android:hint="@string/passwordM"
+                android:labelFor="@+id/viewPssword"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextInstitucion"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/viewPssword2"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="clip_horizontal"
+                android:background="@drawable/text_style"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:text="Confirme su contraseña" />
+            <EditText
+                android:id="@+id/editTextContraseñaM2"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/caja_text_style"
+                android:gravity="center"
+                android:hint="@string/ConfPswM"
+                android:labelFor="@+id/viewPssword2"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextContraseñaM"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButtonEliminar"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="60dp"
+                    android:contentDescription="@string/eliminar"
+                    android:background="@drawable/btn_style"
+                    app:srcCompat="@android:drawable/ic_menu_delete" />
+                <ImageButton
+                    android:id="@+id/imageButtonEditar"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="60dp"
+                    android:contentDescription="@string/editar"
+                    android:background="@drawable/btn_style"
+                    app:srcCompat="@android:drawable/ic_menu_edit" />
+                <ImageButton
+                    android:id="@+id/imageButtonGuardar"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="60dp"
+                    android:background="@drawable/btn_style"
+                    android:contentDescription="@string/Guardar"
+                    app:srcCompat="@android:drawable/ic_menu_save"
+                    tools:ignore="TouchTargetSizeCheck,ImageContrastCheck"
+                    tools:layout_editor_absoluteX="115dp"
+                    tools:layout_editor_absoluteY="677dp" />
+
+
+                <ImageButton
+                    android:id="@+id/imageButtonCancelar"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/btn_style"
+                    android:contentDescription="@string/Cancelar"
+                    app:srcCompat="@android:drawable/btn_dialog"
+                    tools:ignore="TouchTargetSizeCheck"
+                    tools:layout_editor_absoluteX="267dp"
+                    tools:layout_editor_absoluteY="677dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

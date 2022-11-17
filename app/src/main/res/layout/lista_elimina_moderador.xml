@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|top">
+
+    <TextView
+        android:id="@+id/viewNombreM"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/text_style"
+        android:hint="@string/nombreM"
+        android:textColor="@color/white"
+        android:inputType="textPersonName"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/viewCorreo"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/caja_text_style"
+        android:gravity="center"
+        android:hint="@string/correo"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/viewArea1"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/caja_text_style"
+        android:gravity="center"
+        android:hint="@string/areaPri"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/viewarea2"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/caja_text_style"
+        android:gravity="center"
+        android:hint="@string/areaSec"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/viewInstitucion"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/caja_text_style"
+        android:gravity="center"
+        android:hint="@string/institucion"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/viewPssword"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/caja_text_style"
+        android:gravity="center"
+        android:hint="@string/passwordM"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/viewNombreMR"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/caja_text_style"
+        android:gravity="center"
+        android:hint="@string/nombreMR"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+
+
+
+</LinearLayout>
