@@ -33,10 +33,10 @@ public class ListaModeradoresAdapter extends RecyclerView.Adapter<ListaModerador
         //holder.viewId.setText(listaModeradores.get(position).getId());
         holder.viewNombre.setText(listaModeradores.get(position).getNombre());
         holder.viewCorreo.setText(listaModeradores.get(position).getCorreo());
-        holder.viewArea1.setText(listaModeradores.get(position).getArea1());
-        holder.viewarea2.setText(listaModeradores.get(position).getArea2());
-        holder.viewInstitucion.setText(listaModeradores.get(position).getInstitucion());
-        holder.viewNombreMR.setText(listaModeradores.get(position).getNombreMR());
+        //holder.viewArea1.setText(listaModeradores.get(position).getArea1());
+        //holder.viewarea2.setText(listaModeradores.get(position).getArea2());
+        //holder.viewInstitucion.setText(listaModeradores.get(position).getInstitucion());
+        //holder.viewNombreMR.setText(listaModeradores.get(position).getNombreMR());
     }
 
     @Override
@@ -45,17 +45,17 @@ public class ListaModeradoresAdapter extends RecyclerView.Adapter<ListaModerador
     }
 
     public class ModeradorViewHolder extends RecyclerView.ViewHolder {
-        //viewId
-        TextView viewNombre, viewCorreo, viewArea1, viewarea2, viewInstitucion, viewNombreMR;
+        //viewId, viewArea1, viewarea2, viewInstitucion, viewNombreMR
+        TextView viewNombre, viewCorreo;
         public ModeradorViewHolder(@NonNull View itemView) {
             super(itemView);
             //viewId= itemView.findViewById(R.id.viewId);
             viewNombre= itemView.findViewById(R.id.viewNombreM);
             viewCorreo= itemView.findViewById(R.id.viewCorreo);
-            viewArea1= itemView.findViewById(R.id.viewArea1);
-            viewarea2= itemView.findViewById(R.id.viewarea2);
-            viewInstitucion= itemView.findViewById(R.id.viewInstitucion);
-            viewNombreMR= itemView.findViewById(R.id.viewNombreMR);
+            //viewArea1= itemView.findViewById(R.id.viewArea1);
+            //viewarea2= itemView.findViewById(R.id.viewarea2);
+            //viewInstitucion= itemView.findViewById(R.id.viewInstitucion);
+            //viewNombreMR= itemView.findViewById(R.id.viewNombreMR);
         }
     }
 }

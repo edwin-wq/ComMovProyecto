@@ -30,59 +30,5 @@
         android:textColor="@color/white"
         android:textSize="20dp"/>
 
-    <TextView
-        android:id="@+id/viewArea1"
-        android:layout_width="350dp"
-        android:layout_height="48dp"
-        android:background="@drawable/caja_text_style"
-        android:gravity="center"
-        android:hint="@string/areaPri"
-        android:inputType="textPersonName"
-        android:textColor="@color/white"
-        android:textSize="20dp"/>
-
-    <TextView
-        android:id="@+id/viewarea2"
-        android:layout_width="350dp"
-        android:layout_height="48dp"
-        android:background="@drawable/caja_text_style"
-        android:gravity="center"
-        android:hint="@string/areaSec"
-        android:inputType="textPersonName"
-        android:textColor="@color/white"
-        android:textSize="20dp"/>
-
-    <TextView
-        android:id="@+id/viewInstitucion"
-        android:layout_width="350dp"
-        android:layout_height="40dp"
-        android:background="@drawable/caja_text_style"
-        android:gravity="center"
-        android:hint="@string/institucion"
-        android:textColor="@color/white"
-        tools:ignore="TouchTargetSizeCheck"
-        android:textSize="20dp"/>
-
-    <TextView
-        android:layout_width="350dp"
-        android:layout_height="40dp"
-        android:background="@drawable/caja_text_style"
-        android:text="Moderador que remplaza"
-        tools:ignore="TouchTargetSizeCheck"
-        android:textColor="@color/white"
-        android:textSize="30dp"/>
-
-    <TextView
-        android:id="@+id/viewNombreMR"
-        android:layout_width="350dp"
-        android:layout_height="40dp"
-        android:background="@drawable/caja_text_style"
-        android:gravity="center"
-        android:inputType="textPersonName"
-        android:hint="no"
-        android:textColor="@color/white"
-        tools:ignore="TouchTargetSizeCheck"
-        android:textSize="20dp"/>
-
 
 </LinearLayout>

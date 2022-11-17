@@ -40,10 +40,6 @@ public class ConsultarModeradoresActivity extends AppCompatActivity implements V
 
     }
 
-
-
-
-
     @Override
     public void onClick(View view) {
         switch (view.getId()){

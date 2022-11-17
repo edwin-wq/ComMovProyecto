@@ -55,7 +55,7 @@ public class DbModeradores extends DbHelper {
         ModeradoresClass moderador;
         Cursor cursorModerador;
 
-        cursorModerador = db.rawQuery("SELECT id, nombre, correo, institucion, area1,area2 FROM " + TABLE_MODERADORES + " ORDER BY nombre ASC", null);
+        cursorModerador = db.rawQuery("SELECT id, nombre, correo FROM " + TABLE_MODERADORES + " ORDER BY nombre ASC", null);
 
         if (cursorModerador.moveToFirst()) {
             do {
@@ -63,10 +63,6 @@ public class DbModeradores extends DbHelper {
                 moderador.setId(cursorModerador.getInt(0));
                 moderador.setNombre(cursorModerador.getString(1));
                 moderador.setCorreo(cursorModerador.getString(2));
-                moderador.setInstitucion(cursorModerador.getString(3));
-                moderador.setArea1(cursorModerador.getString(4));
-                moderador.setArea2(cursorModerador.getString(5));
-
 
                 listaModerador.add(moderador);
             } while (cursorModerador.moveToNext());
